@@ -1,10 +1,25 @@
-#color-palette {
-    display: flex;
-}
-
 .color {
     display: inline-block;   
-    height: 100%;
-    width: 100%;
-    border: 1px solid black
+    height: 50%;
+    width: 50%;
+    border: 1px solid black;
+    margin: 0;
 }
+
+.cor1 {
+    background-color: black;
+}
+
+.cor2 {
+    background-color: blue;
+}
+
+.cor3 {
+    background-color: gray;
+}
+
+.cor4 {
+    background-color: yellow;
+}
+
+
