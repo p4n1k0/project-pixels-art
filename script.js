@@ -21,9 +21,16 @@ function selected(event) {
 //https://github.com/tryber/sd-015-b-project-pixels-art/pull/124/commits/11c2d00b6aef1e79198790c0329f1704a71b0417
 const pegaCores = document.querySelectorAll('.color');
 let pegaPixels = document.querySelectorAll('.pixel');
+const limpaCelula = document.getElementById('clear-board');
+
+limpaCelula.addEventListener('click', function () {
+    for (let i = 0; i < pegaPixels.length; i += 1) {
+        pegaPixels[i].style.backgroundColor = 'white';
+    }
+})
 
 for (let i = 0; i < pegaPixels.length; i += 1) {
-    pegaPixels[i].style.backgroundColor = 'rgb(255, 255, 255)';
+    pegaPixels[i].style.backgroundColor = 'white';
 }
 
 for (let i = 0; i < pegaCores.length; i += 1) {
