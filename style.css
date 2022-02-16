@@ -1,3 +1,7 @@
+html, body {
+    background-color: purple;
+}
+
 .color {       
     height: 40px;
     width: 40px;
@@ -6,27 +10,16 @@
     display: inline-block;     
 }
 
-#preta{
-    background-color: black;
-}
-
-#azul {
-    background-color: blue;    
-}
-
-#cinza {
-    background-color: gray;    
-}
-
-#amarela {
-    background-color: yellow;    
-}
-
 .pixel {
     display: inline-block;
     height: 40px;
     width: 40px;
     border: 1px solid black;
+    margin: 0;     
+}
+
+.selected {
+    background-color: black;
 }
 
 
