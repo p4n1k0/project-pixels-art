@@ -1,25 +1,25 @@
-.color {
-    display: inline-block;   
-    height: 50%;
-    width: 50%;
+.color {       
+    height: 20%;
+    width: 20%;
     border: 1px solid black;
-    margin: 0;
+    margin: 10px;   
+    display: inline-block;     
 }
 
-.cor1 {
+#preta{
     background-color: black;
 }
 
-.cor2 {
-    background-color: blue;
+#azul {
+    background-color: blue;    
 }
 
-.cor3 {
-    background-color: gray;
+#cinza {
+    background-color: gray;    
 }
 
-.cor4 {
-    background-color: yellow;
+#amarela {
+    background-color: yellow;    
 }
 
 .pixel {
