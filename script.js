@@ -1,58 +1,39 @@
-//requisito 7 consultei o código do Rodolfo Marques - Turma 15
-//https://github.com/tryber/sd-015-b-project-pixels-art/pull/119/commits/82965f04e64245a370921316c4bddd228e31263d
-let black = document.getElementById('preta');
-let blue = document.getElementById('azul');
-let gray = document.getElementById('cinza');
-let yellow = document.getElementById('amarela');
+//requisito 7 seleciona cor de paleta para pintar celulas
+//elementos html
+const preta = document.querySelector('#preta');
+const azul = document.querySelector('#azul');
+const cinza = document.querySelector('#cinza');
+const amarela = document.querySelector('#amarela');
 
+preta.addEventListener('click', black);
+azul.addEventListener('click', blue);
+cinza.addEventListener('click', gray);
+amarela.addEventListener('click', yellow);
 
-black.addEventListener('click', selected);
-blue.addEventListener('click', selected);
-gray.addEventListener('click', selected);
-yellow.addEventListener('click', selected);
-
-function selected(event) {
-    let seleciona = document.querySelector('.selected');
-    seleciona.classList.remove('selected')
-    event.target.classList.add('selected');
+function black() {
+    preta.classList.add('selected');
+    azul.classList.remove('selected');
+    cinza.classList.remove('selected');
+    amarela.classList.remove('selected');
 }
 
-//requisito 8. consultei o código do James Mayke - Turma 15
-//https://github.com/tryber/sd-015-b-project-pixels-art/pull/124/commits/11c2d00b6aef1e79198790c0329f1704a71b0417
-const pegaCores = document.querySelectorAll('.color');
-let pegaPixels = document.querySelectorAll('.pixel');
-const limpaCelula = document.getElementById('clear-board');
-
-limpaCelula.addEventListener('click', function () {
-    for (let i = 0; i < pegaPixels.length; i += 1) {
-        pegaPixels[i].style.backgroundColor = 'white';
-    }
-})
-
-for (let i = 0; i < pegaPixels.length; i += 1) {
-    pegaPixels[i].style.backgroundColor = 'white';
+function blue() {
+    azul.classList.add('selected');
+    preta.classList.remove('selected');
+    cinza.classList.remove('selected');
+    amarela.classList.remove('selected');
 }
 
-for (let i = 0; i < pegaCores.length; i += 1) {
-    pegaCores[i].addEventListener('click', function(){
+function gray() {
+    cinza.classList.add('selected');
+    preta.classList.remove('selected');
+    azul.classList.remove('selected');
+    amarela.classList.remove('selected');
+}
 
-        if (pegaCores[i].className !== 'selected') {
-            
-            for (let i = 0; i < pegaCores.length; i += 1) {
-                pegaCores[i].classList.remove('selected')
-            };
-        };
-        pegaCores[i].classList.add('selected')
-
-        for (let px = 0; px < pegaPixels.length; px += 1) {
-            pegaPixels[px].addEventListener('click', function() {
-                pegaPixels[px].style.backgroundColor = pegaCores[i].style.backgroundColor;
-            })
-        }
-    });
-};
-
-
-
-
-
+function yellow() {
+    amarela.classList.add('selected');
+    preta.classList.remove('selected');
+    azul.classList.remove('selected');
+    cinza.classList.remove('selected');
+}
