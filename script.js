@@ -1,39 +1,22 @@
-//requisito 7 seleciona cor de paleta para pintar celulas
-//elementos html
-const preta = document.querySelector('#preta');
-const azul = document.querySelector('#azul');
-const cinza = document.querySelector('#cinza');
-const amarela = document.querySelector('#amarela');
+//requisito 2 usando JS
+const cor1 = document.getElementById('preta');
+const cor2 = document.getElementById('azul');
+const cor3 = document.getElementById('cinza');
+const cor4 = document.getElementById('amarela');
 
-preta.addEventListener('click', black);
-azul.addEventListener('click', blue);
-cinza.addEventListener('click', gray);
-amarela.addEventListener('click', yellow);
+cor1.style.backgroundColor = 'black';
+cor2.style.backgroundColor = 'blue';
+cor3.style.backgroundColor = 'gray';
+cor4.style.backgroundColor = 'yellow';
 
-function black() {
-    preta.classList.add('selected');
-    azul.classList.remove('selected');
-    cinza.classList.remove('selected');
-    amarela.classList.remove('selected');
-}
+//requisito 7 usando JS
+cor1.addEventListener('click', adicionaClasseSelected);
+cor2.addEventListener('click', adicionaClasseSelected);
+cor3.addEventListener('click', adicionaClasseSelected);
+cor4.addEventListener('click', adicionaClasseSelected);
 
-function blue() {
-    azul.classList.add('selected');
-    preta.classList.remove('selected');
-    cinza.classList.remove('selected');
-    amarela.classList.remove('selected');
-}
-
-function gray() {
-    cinza.classList.add('selected');
-    preta.classList.remove('selected');
-    azul.classList.remove('selected');
-    amarela.classList.remove('selected');
-}
-
-function yellow() {
-    amarela.classList.add('selected');
-    preta.classList.remove('selected');
-    azul.classList.remove('selected');
-    cinza.classList.remove('selected');
+function adicionaClasseSelected(event) {
+    const verificaSelected = document.querySelector('.selected');
+    verificaSelected.classList.remove('selected');
+    event.target.classList.add('selected');
 }
