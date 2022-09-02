@@ -156,3 +156,4 @@
 
 - Verifica se ao clicar no botão, o quadro de pixels é totalmente preenchido de branco
 
+// README BASEADO NO PROJETO DA TRYBE
