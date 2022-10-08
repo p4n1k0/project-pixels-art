@@ -1,4 +1,4 @@
-## Sejam bem vindos ao repositório do projeto Pixels Art
+## Boas vindas ao repositório do projeto Pixels Art
 por [Gabriel Tarick](https://www.linkedin.com/in/gabriel-tarick/)
 
 ---
