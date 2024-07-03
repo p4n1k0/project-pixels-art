@@ -1,7 +1,9 @@
 html, body {
+    min-height: 100%;
+    text-align: center;
+    flex-direction: column;
     background-color: purple;
 }
-
 
 .color {       
     height: 40px;
@@ -20,11 +22,8 @@ html, body {
     background-color: white;     
 }
 
-
-
-
-
-
-
-
-
+#clear-board {
+    display: inline-block;
+    height: 45px;
+    border: 1px solid black;
+}
