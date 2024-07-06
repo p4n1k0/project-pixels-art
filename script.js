@@ -2,7 +2,7 @@
 // elementos html
 const color1 = document.getElementById('black');
 const color2 = document.getElementById('blue');
-const color3 = document.getElementById('gray');
+const color3 = document.getElementById('green');
 const color4 = document.getElementById('yellow');
 const pixelBoard = document.getElementById('pixel-board');
 const pixels = document.getElementsByClassName('pixel');
@@ -10,7 +10,7 @@ const clearBoard = document.getElementById('clear-board');
 
 color1.style.backgroundColor = 'black';
 color2.style.backgroundColor = 'blue';
-color3.style.backgroundColor = 'gray';
+color3.style.backgroundColor = 'green';
 color4.style.backgroundColor = 'yellow';
 
 function addClassSelected(addClass) {
