@@ -1,6 +1,12 @@
+html, body {
+    min-height: 100%;
+    text-align: center;
+    flex-direction: column;
+    background-color: purple; 
+}
+
 #color-palette {
     display: inline-flex;
-
 }
 
 .color {
