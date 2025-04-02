@@ -10,8 +10,13 @@ let boardSize = document.getElementById('board-size');
 let buttonVqv = document.getElementById('generate-board');
 
 
+function randomColor() {
+  const color = Math.floor(Math.random() * 16777215).toString(16);
+  return color; 
+}
+
 function color() {
-  let colorRandom = '#' + (Math.floor(Math.random() * 16777215).toString(16));
+  let colorRandom = '#' + randomColor();
   return colorRandom;
 };
 color1.style.backgroundColor = 'rgb(0, 0, 0)';
